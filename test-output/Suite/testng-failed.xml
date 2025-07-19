@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test2_Edge(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.app.testng.CrossBrowserTesting">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.app.testng.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- Test2_Edge(failed) -->
+</suite> <!-- Failed suite [Suite] -->
