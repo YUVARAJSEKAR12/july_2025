@@ -154,4 +154,27 @@ public class Utility {
 		return value;
 
 	}
+public  static String read_prop_reuseone(String data) {
+
+		String value = null;
+		try {
+			FileReader read = new FileReader(
+					new File("C:\\Users\\HP\\eclipse-workspace\\Develop\\new\\new\\oct\\A_July_2025\\src\\test"
+							+ "\\resources\\TestData\\config.properties"));
+			Properties prop = new Properties();
+			prop.load(read);
+			value = prop.getProperty(data);
+			System.out.println(value);
+
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return value;
+
+	}
+	
 }
