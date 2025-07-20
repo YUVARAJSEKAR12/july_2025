@@ -154,4 +154,7 @@ public class Utility {
 		return value;
 
 	}
+	public static void test1() {
+		System.out.println("testone");
+	}
 }
